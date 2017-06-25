@@ -1,14 +1,14 @@
 
-smoothScroll.init({selector: '[data-scroll]',speed: 500,easing: 'easeInOutQuint',updateURL: true,offset: 16});
+//smoothScroll.init({selector: '[data-scroll]',speed: 500,easing: 'easeInOutQuint',updateURL: true,offset: 16});
 //Pulled from https://github.com/cferdinandi/smooth-scroll/issues/54 Just in case
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   if (window.location.hash ){smoothScroll.animateScroll(  null, window.location.hash  );}
   if(localStorage.getItem('dark-mode') == 'true'){
     document.body.classList.add('dark-mode');
   }
 });
-
+*/
 var trigger = document.getElementById('view-toggle');
 
 trigger.addEventListener('click', function () {
@@ -34,3 +34,12 @@ function init() {
   }
   return;
 }
+
+function emailMasker(){
+  three = 'om';
+  one = 'kaely@kae';
+  two = 'lylinker.c';
+  address = one+two+three;
+  address = 'mailto:'+address;
+  window.location.href = address;
+};

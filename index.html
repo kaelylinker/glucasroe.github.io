@@ -1,107 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Kaely Linker - Designer</title>
-
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-
-
-    <meta property="og:title" content="Kaely Linker - Designer" />
-    <meta property="twitter:title" content="Kaely Linker - Designer" />
-
-    <link rel="shortcut icon" href="/images/site/favicon.ico">
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-    <script>   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-101501135-1', 'auto');   ga('send', 'pageview');  </script>
-
-    <script type="text/javascript">
-    //Stops the white flash when dark mode is on
-      if(localStorage.getItem('dark-mode') === 'true'){
-        localStorage.setItem('inline-style', 'true');
-        var sheet = (function() {
-  	        var style = document.createElement("style");
-            style.appendChild(document.createTextNode(""));
-            document.head.appendChild(style);
-            return style.sheet;
-        })();
-        sheet.insertRule("body { background-color:#1f2028}", 0);
-        sheet.insertRule(".site-header>a{opacity: 0.4;}",1);
-      }
-    </script>
-  </head>
-
-  <body>
-    <body class='animating-in'>
-    <header class="site-header">
-        <a href='/'>
-          <img alt='Kaely Linker Logo' src='images/site/heartlogo.png'>
-          <h1>Kaely Linker</h1>
-        </a>
-        <nav>
-          <a href="/about" <!--class="nav--current"-->About</a>
-          <a href="/portfolio" <!--class="nav--current"-->Portfolio</a>
-          <a href="/resume" <!--class="nav--current"-->Resume</a>
-
-        </nav>
-    </header>
-    <div class='animate-in post-body'>
-
-    <main class="content" role="main">
-        <div class="site-intro">
-          <h1>Creative Generalist. Graphic Designer. Coffee Drinker.</h1>
-          <a class="button" href="/about">More about Kaely</a>
-
-
-          <p>I design and maintain WordPress websites; handle all types of graphic design for print and web; manage and create content for multiple social media presences; write creatively for blogs or other content; and create, film, and edit video. You can see more in my <a href="/portfolio" <!--class="nav--current"-->Portfolio</a>.
- I've helped fledgling non-profits and Fortune 500's. <a href = "mailto:kaelyATkaelylinkerDOTcom"
+---
+layout: default
+---
+<div class="site-intro">
+  <h1>Creative Generalist. Graphic Designer. Coffee Drinker.</h1>
+  <a class="button" href="/about">More about Kaely</a>
+  <p>I design and maintain WordPress websites; handle all types of graphic design for print and web; manage and create content for multiple social media presences; write creatively for blogs or other content; and create, film, and edit video. You can see more in my <a href="/portfolio">Portfolio</a>. I've helped fledgling non-profits and Fortune 500's. <a href = "mailto:kaelyATkaelylinkerDOTcom"
    onclick = "this.href=this.href
               .replace(/AT/,'&#64;')
               .replace(/DOT/,'&#46;')"
 >Drop me a line, I'd love to chat.</a></p>
+</div>
         <article class="post post-preview">
             <a href="/portfolio">
               <img class="post-featured-image post-image-header animated" src="images\site\index-scene.jpg">
             </a>
-</div>
-    </header>
         </article>
-    </main>
-
-</div>
-<footer>
-  <p class="copyright">&copy; 2017 Kaely Linker</p>
-  <p class="social">
-    <a href="mailto:kaelyATkaelylinkerDOTcom"
-      onclick = "this.href=this.href
-                 .replace(/AT/,'&#64;')
-                 .replace(/DOT/,'&#46;')">
-      <img alt='Email' src='images/site/email.svg'>
-    </a>
-    <a href='https://www.linkedin.com/in/kaelylinker/'>
-      <img alt='LinkedIn' src='images/site/linked-in.svg'>
-    </a>
-    <a href='https://twitter.com/kaelylinker'>
-      <img alt='Twitter' src='images/site/twitter.svg'>
-    </a>
-    <a href='https://facebook.com/kaelylinkerdesign'>
-      <img alt='Facebook' src='images/site/facebook.svg'>
-    </a>
-  </a>
-  <a href='https://instagram.com/kaelylinker'>
-    <img alt='Instagram' src='images/site/instagram.svg'>
-  </a>
-  </p>
-</footer>
-<div class="view-toggle" id="view-toggle"></div>
-<script type="text/javascript" src="scripts/scripts-min.js"></script>
-</body>
-</html>

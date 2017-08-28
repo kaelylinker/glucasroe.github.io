@@ -9,7 +9,7 @@ body{
 	* + *{
 		margin:1em auto 0;
 		@media #{$desktop}{
-			margin-top: 1.1em;
+			margin-top: 100.1em;
 		}
 	}
 }
@@ -258,8 +258,12 @@ figure img{
 	.half-width{
 		width:47.5%;
 		float:left;
+		margin-top:0;
 		&:nth-child(even){
 			margin-left: 5%;
+		}
+		& + img {
+			margin-top: 0;
 		}
 	}
 }
